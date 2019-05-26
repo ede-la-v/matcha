@@ -1,0 +1,129 @@
+#truc {
+	display: flex;
+	flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#profils {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	min-width: 360px;
+	max-width: 900px;
+	justify-content: space-around;
+	text-align: center;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#profils li {
+	padding: 0;
+}
+
+.profil{
+	width: 25%;
+	min-width: 180px;
+	background-color: white;
+	display: flex;
+	box-shadow: 0px 12px 33px 0px #b6b6b6;	
+	margin: 5px;
+	transition: all .2s ease-in-out;
+}
+
+.profil:hover {
+	transform: scale(1.1);
+}
+
+.profil a {
+	text-decoration: none;
+	width: 100%;
+	overflow: hidden;
+	color: black;
+}
+
+.profil .card-square {
+	width: 100%;
+	padding-bottom: 100%;
+}
+
+#res {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#res div{
+	margin: 2px;
+	width: 30%;
+	min-width: 70px;
+	background-color: #B20000;
+}
+
+.elem{
+	padding: 1%;
+	border-radius: 5px;
+	width: 30%;
+	margin: auto;
+	font-size: 1em;
+}
+
+.profil h1 {
+	color: black;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 100; 
+	line-height: 10px;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+}
+
+.profile-tags{
+	padding-bottom: 5px;
+}
+
+.bar{
+	display: flex;
+}
+
+#sTags{
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#sTags li {
+	display: inline;
+	margin: 5px;
+}
+
+.search-box {
+	background-color: white;
+	max-width: 1100px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+	padding: 0px 10px;
+	box-shadow: 0px 12px 33px 0px #b6b6b6;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.red-heart {
+	color: #B20000;
+	padding-bottom: 5px;
+}
+
+.star{
+	font-size: 0.8em;
+}
+
+.gold-heart {
+	color: gold;
+	padding-bottom: 5px;
+}

@@ -1,0 +1,1 @@
+exports.jwtSecret = 'hugo42born2code'
