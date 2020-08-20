@@ -6,7 +6,7 @@
     "start": "nodemon ./bin/www --ignore client/"
   },
   "dependencies": {
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.2",
     "buffer-equal-constant-time": "^1.0.1",
     "connect-busboy": "0.0.2",
