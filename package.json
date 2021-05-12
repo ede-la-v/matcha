@@ -25,7 +25,7 @@
     "mysql": "^2.15.0",
     "mysql2": "^1.5.3",
     "node-geocoder": "^3.22.0",
-    "nodemailer": "^4.6.3",
+    "nodemailer": "^6.4.16",
     "nodemon": "^1.17.2",
     "serve-favicon": "^2.4.5",
     "session.socket.io": "^0.2.1",
