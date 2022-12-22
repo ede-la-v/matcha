@@ -9,7 +9,7 @@
     "@fortawesome/react-fontawesome": "0.0.17",
     "base64-img": "^1.0.4",
     "cancelable-fetch": "^1.0.0",
-    "jsonwebtoken": "^8.2.0",
+    "jsonwebtoken": "^9.0.0",
     "query-string": "^5.1.1",
     "rc-slider": "^8.6.1",
     "react": "^15.6.2",
