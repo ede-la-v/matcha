@@ -28,7 +28,7 @@
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "^1.1.1",
+    "react-scripts": "^5.0.1",
     "react-scrollbar-js": "^1.0.1",
     "react-search": "^2.0.5",
     "react-star-ratings": "^2.2.0",
