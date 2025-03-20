@@ -20,7 +20,7 @@
     "google-geocoder": "^0.2.1",
     "jade": "^1.11.0",
     "json": "^9.0.6",
-    "jsonwebtoken": "^8.2.0",
+    "jsonwebtoken": "^9.0.0",
     "morgan": "^1.9.0",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.3",
