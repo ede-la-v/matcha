@@ -21,14 +21,15 @@ router.post('/new', isAuthenticated, function(req, res, next) {
           console.log(err);
           return res.status(500).json({ error: 'Failed to create message' });
       }
-      Messages.countMessages(req.body.id, function(err, count){
+      Messages.countMessages(req.body.id, function(err, countResult){
           if (err) {
               console.log(err);
               return res.status(500).json({ error: 'Failed to count messages' });
           }
+          const notifiedCount = countResult && countResult[0] ? countResult[0].count : 0;
           res.json({ 
               id: messageId, 
-              notifiedCount: count && count[0] ? count[0].count : 0
+              notifiedCount: notifiedCount
           });
       });
   });
