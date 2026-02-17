@@ -28,7 +28,7 @@ router.post('/new', isAuthenticated, function(req, res, next) {
           }
           res.json({ 
               id: messageId, 
-              notifiedCount: count[0].count 
+              notifiedCount: count && count[0] ? count[0].count : 0
           });
       });
   });
