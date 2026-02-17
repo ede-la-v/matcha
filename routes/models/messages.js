@@ -14,7 +14,10 @@ exports.getConv = function(match, client, cb) {
 }
 
 exports.newMess = function(message, id_messaged, id_messager, cb) {
-	con.query("INSERT INTO messages (message, id_messaged, id_messager) VALUES (?, ?, ?)", [message, id_messaged, id_messager], cb);
+	con.query("INSERT INTO messages (message, id_messaged, id_messager) VALUES (?, ?, ?)", [message, id_messaged, id_messager], function(err, result) {
+		if (err) return cb(err);
+		cb(null, result.insertId);
+	});
 }
 
 exports.getConvs = function(client, cb) {

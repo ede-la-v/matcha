@@ -16,9 +16,21 @@ router.post('/conv', isAuthenticated, function(req, res, next) {
 });
 
 router.post('/new', isAuthenticated, function(req, res, next) {
-  Messages.newMess(req.body.message, req.body.id, req.decoded.id, function(err, messages){
-      if (err) console.log(err);
-      res.end()
+  Messages.newMess(req.body.message, req.body.id, req.decoded.id, function(err, messageId){
+      if (err) {
+          console.log(err);
+          return res.status(500).json({ error: 'Failed to create message' });
+      }
+      Messages.countMessages(req.body.id, function(err, count){
+          if (err) {
+              console.log(err);
+              return res.status(500).json({ error: 'Failed to count messages' });
+          }
+          res.json({ 
+              id: messageId, 
+              notifiedCount: count[0].count 
+          });
+      });
   });
     
 
